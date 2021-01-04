@@ -21,3 +21,9 @@ const forDisplay = (value) => {
   document.getElementById("output").innerHTML += value
 }
 
+const solve = () => {
+  removeZero()
+  var equation = document.getElementById("output").innerHTML
+  var solved = eval(equation)
+  document.getElementById('output').innerHTML = solved
+}
