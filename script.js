@@ -9,3 +9,15 @@ const removeZero = () => {
       document.getElementById('output').innerHTML = value;
   }
 }
+
+const perc = () => {
+  var value = document.getElementById("output").innerHTML
+  value = value / 100
+  document.getElementById("output").innerHTML = value
+}
+
+const forDisplay = (value) => {
+  removeZero()
+  document.getElementById("output").innerHTML += value
+}
+
